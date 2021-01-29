@@ -32,3 +32,36 @@ html {
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
 }
+
+
+/* Header */
+header {
+  text-align:center;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  color: var(--off-white);
+}
+
+
+/* sections */
+section {
+  text-align:center;
+}
+
+section:nth-of-type(2) {
+  background-color: var(--black);
+  color: var(--off-white);
+}
+
+section:nth-of-type(2) div {
+  background-color: var(--warm-black);
+}
+
+section:nth-of-type(3) {
+  color: var(--off-white);
+}
+
+/* Footer */
+footer {
+  background-color: var(--bitcoin-orange);
+  text-align:center;
+}
