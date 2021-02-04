@@ -1,0 +1,16 @@
+.image {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url('../../assets/img/bitcoinbaby2x.png');
+  background-position: center;
+  background-size:cover;
+  color: var(--off-white);
+  margin-top: 0;
+  padding-top: -70px;
+}
+
+.title-container {
+  margin-top: 0;
+  padding-top: 70px;
+}

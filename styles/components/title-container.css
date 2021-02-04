@@ -1,0 +1,8 @@
+.title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin:40px auto 0;
+  text-align: center;
+  align-self: center;
+}

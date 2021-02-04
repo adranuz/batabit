@@ -1,0 +1,82 @@
+.tables-container {
+  padding-top: 40px;
+  text-align: initial;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  overscroll-behavior-y: contain;
+  gap: 40vw;
+  
+}
+.table-container:nth-of-type(odd) {
+  margin-left: 50%;
+}
+.table-container:nth-of-type(even) {
+  margin-right: 40vw;
+}
+/* table content */
+.table--title {
+  color: var(--bitcoin-orange);
+  padding: 10px 12px;
+}
+.table-container:nth-child(even) .table--title {
+  color: var(--secondary-blue);
+}
+
+.table--update {
+  padding: 8px;
+  margin: 10px 12px;
+  border-radius: 8px;
+  background-color: var(--soft-orange);
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--warm-black)
+}
+.table-container:nth-child(even) .table--update {
+  background-color: var(--soft-blue)
+}
+.table--update span {
+  font-weight: 400;
+}
+.table {
+  display: grid;
+  grid-template-columns: 101px 95px;
+  border-radius: 8px;
+  gap: 1px;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+.table p {
+  background-color: var(--just-white);
+  padding: 10px 12px;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+.table-name {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #B5B0AC;
+  
+}
+.table-price {
+  font-weight: 400;
+  font-size: 1.4rem;
+  align-self: center;
+  /* color: #B5B0AC; */
+  justify-content: center;
+}
+.table-price span {
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url('../../assets/icons/trending-down.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+.table-price:nth-child(6) span {
+  background-image: url('../../assets/icons/trending-up.svg');
+}

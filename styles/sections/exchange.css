@@ -1,0 +1,29 @@
+/* exchance section */
+.exchange {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-color: var(--off-white);
+  position: relative;
+}
+.exchange h2 {
+  color: var(--warm-black);
+}
+.exchange {
+  color: var(--text-grey);
+}
+
+.exchange--image {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  background-image: url('../../assets/img/Bitcoin.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.exchange--potato {
+  width: 40px;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 20px);
+}

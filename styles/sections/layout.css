@@ -1,0 +1,70 @@
+header {
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  color: var(--off-white);
+  position: relative;
+  text-align: center;
+  height: 334px;
+}
+
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 50px;
+}
+
+header p {
+  color: var(--soft-orange);
+}
+
+header a {
+  position:absolute;
+  top: 270px;
+  left: calc(50% - 110px);
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 223px;
+  background-color: var(--off-white);
+  /* Shadow */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  z-index: 1;
+}
+
+header a span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url('../../assets/icons/down-arrow.svg');
+}
+
+header .title-container {
+  padding-top: 40px
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--bitcoin-orange);
+  padding: 40px 65px;
+  display: flex;
+  justify-content: space-between;
+}
+footer a, li {
+  text-decoration: none;
+  color: var(--off-white);
+  font-size: 14px;
+  font-weight: 500;
+  list-style: none;
+}
+footer ol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

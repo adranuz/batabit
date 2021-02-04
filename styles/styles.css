@@ -1,0 +1,72 @@
+/* Agregando estilos
+1. Posicion -> static, absolute, relative, fixed
+2. Modelo de caja -> margin, border, padding, content
+3. Tipografia -> tipos, tamanios de fuente
+4. Estilos visuales -> box-shadow, border-radius, gradient, etc
+5. Otros -> reglas CSS y mas
+*/
+
+/* fonts
+font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;  
+*/
+
+/* components */
+@import url("./components/title-container.css");
+@import url("./components/table-exchange.css");
+
+/* sections */
+@import url("./sections/layout.css");
+@import url("./sections/exchange.css");
+@import url("./sections/features.css");
+@import url("./sections/image.css");
+@import url("./sections/price.css");
+
+/* Colores */
+:root {
+  --bitcoin-orange:#f7931a;
+  --soft-orange:#ffe9d5;
+  --secondary-blue:#1a9af7;
+  --soft-blue:#e7f5ff;
+  --warm-black:#282623;
+  --black:#201e1c;
+  --grey:#bababa;
+  --off-white:#faf8f7;
+  --just-white:#fff;
+  --text-grey:#757575;
+
+  /* Fonts */
+  --font-2: 'Inter', sans-serif;  
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+h3 {
+  padding: 10px 12px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+p {
+  margin-top: 25px;
+  font-size:1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+main, header {
+  width: 100%;
+}

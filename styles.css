@@ -22,6 +22,8 @@ font-family: 'Inter', sans-serif;
   --grey:#bababa;
   --off-white:#faf8f7;
   --just-white:#fff;
+  --text-grey:#757575;
+
 }
 * {
   box-sizing: border-box;
@@ -32,29 +34,212 @@ html {
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
 }
-
+h2 {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
 
 /* Header */
 header {
-  text-align:center;
   background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
   color: var(--off-white);
+  position: relative;
+  text-align: center;
+  min-width: 320px;
+  height: 334px;
+
+}
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+}
+
+.header--title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin: 40px auto 0;
+  text-align: center;
+  align-self: center;
+}
+.header--title-container h1{
+  
+}
+.header--title-container p{
+  margin-top: 25px;
+  font-size:1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange)
+}
+.header--button {
+  position:absolute;
+  top: 270px;
+  left: calc(50% - 110px);
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 223px;
+  background-color: var(--off-white);
+  /* Shadow */
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+}
+.header--button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url('./assets/icons/down-arrow.svg');
+}
+
+/* Main */
+main {
+  background-color: var(--off-white);
 }
 
 
 /* sections */
 section {
   text-align:center;
+  background-color: var(--off-white);
+}
+.main-exchange-container {
+  padding-top: 80px;
+  padding-bottom:30px;
+  text-align: center;
+}
+.main-exchange--image {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  background-image: url('./assets/img/Bitcoin.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.main-exchange--texts {
+  width:90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main-exchange--texts h2 {
+  color: var(--black);
+}
+.main-exchange--texts p {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
 }
 
+
+/* Main tables ---------------------------------------------------------------*/
+.main-table-container {
+  width: 197px;
+  margin: 0 auto;
+  text-align: initial;
+}
+.main-table-container--title {
+  color: var(--bitcoin-orange);
+  padding: 10px 12px;
+}
+.main-table-container--update {
+  padding: 8px;
+  margin: 10px 12px;
+  border-radius: 8px;
+  background-color: var(--soft-orange);
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+}
+.main-table-container--update span {
+  font-weight: 400;
+}
+.main-table {
+  display: grid;
+  grid-template-columns: 101px 95px;
+  border-radius: 8px;
+  gap: 1px;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+.main-table p {
+  background-color: var(--just-white);
+  padding: 10px 12px;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+}
+.main-table-name {
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.main-table-price {
+  font-weight: 400;
+  font-size: 1.4rem;
+  align-self: center;
+  color: #757575;
+}
+.main-table-price span {
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+}
+
+/* Section 2 --------------------------------------------------------------- */
 section:nth-of-type(2) {
   background-color: var(--black);
   color: var(--off-white);
 }
-
-section:nth-of-type(2) div {
-  background-color: var(--warm-black);
+.features-text {
+  padding-top: 64px;
 }
+.features-text h2{
+  color: var(--off-white);
+}
+
+/* Section 2 list cards */
+
+.features-list{
+  background:red;
+}
+.features--card {
+  background-color: var(--warm-black);
+  border-radius: 4px;
+  padding:16px 16px;
+  text-align: left;
+  display: block;
+}
+.features--card  p {
+
+}
+.features--card  p {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+.features--card h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+
+
 
 section:nth-of-type(3) {
   color: var(--off-white);

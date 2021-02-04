@@ -1,0 +1,40 @@
+.features {
+  background-color: var(--black);
+  padding-bottom: 0;
+
+}
+.features .title-container {
+  margin-top: 0;
+  padding-top: 7rem;
+}
+.features h2, h3 {
+  color: var(--off-white)
+}
+.features p {
+  color: var(--text-grey);
+}
+
+
+
+/* features features-list features--card */
+
+.features-list {
+  margin: 32px 5% 0;
+  padding-bottom: 32px;
+
+}
+.features--card {
+  background-color: var(--warm-black);
+  margin: auto auto 16px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  padding: 14px 16px 22px;
+  max-width: 630px;
+}
+.features--card h3 {
+  margin: 0;
+  padding-left: 0;
+}
+.features--card p {
+  margin-top: 0;
+}
