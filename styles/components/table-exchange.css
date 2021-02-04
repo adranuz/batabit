@@ -2,17 +2,25 @@
   padding-top: 40px;
   text-align: initial;
   display: flex;
-  justify-content: center;
   overflow-y: hidden;
   overscroll-behavior-y: contain;
-  gap: 40vw;
-  
 }
-.table-container:nth-of-type(odd) {
-  margin-left: 50%;
+.tables-container .vertical-sizing {
+  width: auto;
+  min-width: auto;
+  display: flex;
+  gap: 40px;
+  padding: 0 80px;
 }
-.table-container:nth-of-type(even) {
-  margin-right: 40vw;
+
+
+.table {
+  display: grid;
+  grid-template-columns: 101px 95px;
+  border-radius: 8px;
+  gap: 1px;
+  box-sizing: content-box;
+  overflow: hidden;
 }
 /* table content */
 .table--title {
@@ -38,14 +46,6 @@
 }
 .table--update span {
   font-weight: 400;
-}
-.table {
-  display: grid;
-  grid-template-columns: 101px 95px;
-  border-radius: 8px;
-  gap: 1px;
-  box-sizing: content-box;
-  overflow: hidden;
 }
 .table p {
   background-color: var(--just-white);
@@ -79,4 +79,10 @@
 }
 .table-price:nth-child(6) span {
   background-image: url('../../assets/icons/trending-up.svg');
+}
+
+@media screen and (min-width: 612px) {
+  .tables-container {
+    justify-content: space-evenly;
+  }
 }

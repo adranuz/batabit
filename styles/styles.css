@@ -68,5 +68,5 @@ p {
   line-height: 1.8rem;
 }
 main, header {
-  width: 100%;
+  min-width: 320px;
 }

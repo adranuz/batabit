@@ -21,7 +21,6 @@
 .features-list {
   margin: 32px 5% 0;
   padding-bottom: 32px;
-
 }
 .features--card {
   background-color: var(--warm-black);
@@ -37,4 +36,13 @@
 }
 .features--card p {
   margin-top: 0;
+}
+
+/* media querys */
+@media screen and (min-width: 717px) {
+  .features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 60px;
+  }
 }

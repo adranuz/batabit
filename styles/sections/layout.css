@@ -4,6 +4,7 @@ header {
   position: relative;
   text-align: center;
   height: 334px;
+  min-width: 320px;
 }
 
 header img {
@@ -55,6 +56,7 @@ footer {
   padding: 40px 65px;
   display: flex;
   justify-content: space-between;
+  min-width: 320px;
 }
 footer a, li {
   text-decoration: none;

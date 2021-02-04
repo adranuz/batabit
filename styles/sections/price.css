@@ -1,5 +1,6 @@
 .price {
   background-color: var(--off-white);
+  padding-bottom: 60px;
 }
 
 .price p {
@@ -7,35 +8,52 @@
 }
 
 .price-list {
-  text-align: center;
-  margin: 20px 0;
-  padding-top: 30px;
+  
   display: flex;
-  align-content: center;
+  height: 300px;
+  margin: 40px auto ;
+  padding: auto;
+  
+  /* Vertical scroll */
   overflow-y: hidden;
   overscroll-behavior-y: contain;
   scroll-snap-type: proximity;
-  height: 290px;
+}
+
+.vertical-sizing {
+  display: flex;
+  /* width: 00px; */
+  min-width: 700px;
+  flex-direction: row;
+  padding: 40px auto;
+  scroll-snap-align: center;
 }
 
 .price-card {
+  text-align: center;
   background-color: var(--just-white);
-  margin: auto 4px;
+  margin: auto;
   width: 65%;
   min-width: 230px;
   max-width: 300px;
+  width: 200px;
+  min-width: 200px;
   height: 247px;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border-radius: 8px;
   position: relative;
   padding: 31px 20px 24px;
   display: flex;
-  scroll-snap-align: center;
   flex-direction: column;
   justify-content: space-between;
   color: var(--warm-black);
-
 }
+.price-card:nth-of-type(1) {
+ margin-left:40px;
+}
+.price-card:nth-last-of-type(1) {
+  margin-right:40px;
+ }
 
 .price-card .price-recomended {
   position: absolute;
@@ -90,4 +108,11 @@ p.price-amount{
   /* margin-left: 2px; */
   width: 20px;
   height: 24px;
+}
+
+/* Media querys */
+@media screen and (min-width: 717px) {
+  .price-list {
+    justify-content: center;
+  }
 }
