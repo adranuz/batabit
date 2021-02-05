@@ -48,7 +48,9 @@
   font-weight: 400;
 }
 .table p {
-  background-color: var(--just-white);
+  /* background-color: var(--just-white); */
+  background-color: var(--black);
+  /* background-image: url('../../assets/img/double-bubble-dark.png'); */
   padding: 10px 12px;
   display: flex;
   font-family: 'Inter', sans-serif;
@@ -57,13 +59,15 @@
 .table-name {
   font-weight: 500;
   font-size: 1.6rem;
-  color: #B5B0AC;
+  color: var(--off-white);
   
 }
 .table-price {
   font-weight: 400;
   font-size: 1.4rem;
   align-self: center;
+  color: var(--off-white);
+
   /* color: #B5B0AC; */
   justify-content: center;
 }

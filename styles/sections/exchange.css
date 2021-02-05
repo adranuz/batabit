@@ -2,11 +2,14 @@
 .exchange {
   padding-top: 50px;
   padding-bottom: 70px;
-  background-color: var(--off-white);
+  background-color: var(--warm-black);
   position: relative;
+  /* background-image: url('../../assets/img/double-bubble-dark.png'); */
+
 }
 .exchange h2 {
-  color: var(--warm-black);
+  /* color: var(--warm-black); */
+  color: var(--off-white)
 }
 .exchange {
   color: var(--text-grey);

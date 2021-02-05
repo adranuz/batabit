@@ -1,5 +1,6 @@
 header {
-  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  /* background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%); */
+  background-image: url('../../assets/img/double-bubble-dark.png');
   color: var(--off-white);
   position: relative;
   text-align: center;
@@ -17,7 +18,18 @@ header p {
   color: var(--soft-orange);
 }
 
-header a {
+/* border: 2px solid var(--bitcoin-orange);
+padding: 12px 16px;
+font-weight: 700;
+font-size: 14px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+background-color: var(--warm-black);
+color: var(--off-white); */
+
+header a {  
   position:absolute;
   top: 270px;
   left: calc(50% - 110px);
@@ -52,7 +64,8 @@ header .title-container {
 
 /* Footer */
 footer {
-  background-color: var(--bitcoin-orange);
+  /* background-color: var(--bitcoin-orange); */
+  background-color: var(--warm-black);
   padding: 40px 65px;
   display: flex;
   justify-content: space-between;

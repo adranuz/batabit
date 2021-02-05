@@ -1,5 +1,6 @@
 .features {
   background-color: var(--black);
+  background-image: url('../../assets/img/double-bubble-dark.png');
   padding-bottom: 0;
 
 }

@@ -1,19 +1,21 @@
 .price {
   background-color: var(--off-white);
   padding-bottom: 60px;
+  background-image: url('../../assets/img/double-bubble-dark.png');
+  color: var(--off-white);
 }
 
 .price p {
-  color: var(--text-grey);
+  color: var(--grey);
 }
-
+.price-card h3 {
+  color: var(--grey);
+}
 .price-list {
-  
   display: flex;
   height: 300px;
   margin: 40px auto ;
   padding: auto;
-  
   /* Vertical scroll */
   overflow-y: hidden;
   overscroll-behavior-y: contain;
@@ -22,7 +24,6 @@
 
 .vertical-sizing {
   display: flex;
-  /* width: 00px; */
   min-width: 700px;
   flex-direction: row;
   padding: 40px auto;
@@ -31,7 +32,7 @@
 
 .price-card {
   text-align: center;
-  background-color: var(--just-white);
+  background-color: var(--warm-black);
   margin: auto;
   width: 65%;
   min-width: 230px;
@@ -53,8 +54,10 @@
 }
 .price-card:nth-last-of-type(1) {
   margin-right:40px;
- }
-
+}
+.price-card {
+  color: var(--off-white);
+}
 .price-card .price-recomended {
   position: absolute;
   width: 112;
@@ -68,10 +71,9 @@
 }
 .price-card h3 {
   padding: 0;
-  color: var(--warm-black);
 }
 p.price-amount{
-  color: var(--warm-black);
+  color: var(--off-white);
   margin-top: 0;
   font-family: var(--font-2);
   font-size: 52px;
@@ -81,7 +83,7 @@ p.price-amount{
   font-weight: bold;
 }
 .price-amount span {
-  color: var(--warm-black);
+  color: var(--off-white);
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -102,6 +104,8 @@ p.price-amount{
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  background-color: var(--warm-black);
+  color: var(--off-white);
 }
 .price-card button span {
   background-image: url('../../assets/icons/orange-right-arrow.svg');
